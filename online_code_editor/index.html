@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <script src="codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    
+    <script src="codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="codemirror/mode/xml/xml.js"></script>
+    <script src="codemirror/mode/css/css.js"></script>
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Code Editor</h1>
+    </header>
+
+    <main>
+        
+            <section id="html-section">
+                <h2>HTML Editor</h2>
+                <textarea id="html-editor"></textarea>
+            </section>
+            <section id="css-section">
+                <h2>CSS Editor</h2>
+                <textarea id="css-editor"></textarea>
+            </section>
+            <section id="js-section">
+                <h2>JavaScript Editor</h2>
+                <textarea id="js-editor"></textarea>
+            </section>
+            
+    </main>
+
+    <div>
+        <button id="run-button">Run</button>
+    </div>
+            <section id="output-section">
+                <h2>Output</h2>
+                <iframe id="output-frame"></iframe>
+            </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
